@@ -9,7 +9,7 @@ export default [
     },
     {
         id: 3,
-        on: true
+        on: false
     },
     {
         id: 4,
@@ -17,12 +17,10 @@ export default [
     },
     {
         id: 5,
-        on: true
+        on: false
     },
     {
         id: 6,
         on: false
     },
-
-
 ]
