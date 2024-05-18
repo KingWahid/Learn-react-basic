@@ -7,9 +7,9 @@ const Question = () => {
     }
   return (
     <div>
-        <h1>Do i feel like going out tonight</h1>
+        <h1>is mr jokowi our sevent president?</h1>
         <div onClick={changeMind}>
-            <h1>{isGoingOut ? "yes" : "no"}</h1>
+            <h1 style={{cursor: 'pointer'}}>{isGoingOut ? "yes" : "no"}</h1>
         </div>
     </div>
   )
