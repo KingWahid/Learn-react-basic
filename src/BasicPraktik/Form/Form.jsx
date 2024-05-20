@@ -119,6 +119,7 @@ export default function Form() {
 
             <label htmlFor="favGirl">What your favorite girl?</label>
             <br/>
+            <br />
             <select
                 id="favGirl"
                 value={dataform.favGirl}
@@ -133,7 +134,8 @@ export default function Form() {
                 <option value="arabian">Arabian</option>
             </select>
             <br/>
-            <button>Submit</button>
+            
+            <button>Sign up</button>
         </form>
     
     

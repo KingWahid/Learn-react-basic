@@ -10,11 +10,12 @@ import Squere from './BasicPraktik/BoxPractice2/Squere'
 import Jokes from './BasicPraktik/JokesProps/Jokes'
 import Conren from './BasicPraktik/ConditionalRendering/Conren'
 import Form from './BasicPraktik/Form/Form'
+import FromPractice from './BasicPraktik/FormPractice/FromPractice'
 
 const App = () => {
   return (
     <div>
-        {/* <Counter/>
+        <Counter/>
         <hr/>
         <Question/>
         <hr/>
@@ -28,13 +29,15 @@ const App = () => {
         <hr/>
         <Parent/>
         <hr/>
-        <Squere /> */}
+        <Squere />
         <hr/>
-        {/* <Jokes />
+        <Jokes />
         <hr/>
-        <Conren/> */}
+        <Conren/>
         <hr />
         <Form />
+        <hr/>
+        <FromPractice />
     </div>
   )
 }
