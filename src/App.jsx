@@ -9,6 +9,7 @@ import Parent from './BasicPraktik/PassingDataAround/Parent'
 import Squere from './BasicPraktik/BoxPractice2/Squere'
 import Jokes from './BasicPraktik/JokesProps/Jokes'
 import Conren from './BasicPraktik/ConditionalRendering/Conren'
+import Form from './BasicPraktik/Form/Form'
 
 const App = () => {
   return (
@@ -29,9 +30,11 @@ const App = () => {
         <hr/>
         <Squere /> */}
         <hr/>
-        <Jokes />
+        {/* <Jokes />
         <hr/>
-        <Conren/>
+        <Conren/> */}
+        <hr />
+        <Form />
     </div>
   )
 }
