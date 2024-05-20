@@ -8,11 +8,12 @@ import StateObjectProps from './BasicPraktik/StateObjectProps/StateObjectProps'
 import Parent from './BasicPraktik/PassingDataAround/Parent'
 import Squere from './BasicPraktik/BoxPractice2/Squere'
 import Jokes from './BasicPraktik/JokesProps/Jokes'
+import Conren from './BasicPraktik/ConditionalRendering/Conren'
 
 const App = () => {
   return (
     <div>
-        <Counter/>
+        {/* <Counter/>
         <hr/>
         <Question/>
         <hr/>
@@ -26,9 +27,11 @@ const App = () => {
         <hr/>
         <Parent/>
         <hr/>
-        <Squere />
+        <Squere /> */}
         <hr/>
         <Jokes />
+        <hr/>
+        <Conren/>
     </div>
   )
 }
