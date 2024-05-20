@@ -6,21 +6,31 @@ export default function Form() {
         lastname: "",
         email: "",
         password: "",
-        comment: ""
+        comment: "",
+        isSingle: true,
+        employment: "",
+        favGirl: ""
     })
-    console.log(dataform)
+    console.log(dataform.favGirl)
     function handleChange(event){
+
+        const {name, value, type, checked} = event.target
         setDataForm(prevData => {
             return {
                 ...prevData,
-                [event.target.name]: event.target.value
+                [name]: type === "checkbox" ? checked : value
             }
         })
+    }
+    function handleSubmit(event){
+        // prevent page refresh and html change
+        event.preventDefault()
+        console.log(dataform)
     }
    
   return (
     
-        <form className='form'>
+        <form onSubmit={handleSubmit}>
             <input 
                 type="text"
                 placeholder='First name'
@@ -49,12 +59,81 @@ export default function Form() {
                 name="password"
                 value={dataform.password}
             />
+            
             <textarea 
                 value={dataform.comment}
                 onChange={handleChange}
                 name="comment"
                 placeholder='put your comment here'   
             />
+            <input
+                type='checkbox'
+                id='check'
+                name='isSingle'
+                onChange={handleChange}
+                value={dataform.isSingle}
+            />
+            <label htmlFor='check'>Are you have a girlfriend?</label>
+            <br />
+            <br />
+            <fieldset>
+                <legend>Current employment status</legend>
+                <input 
+                    name="employment"
+                    type="radio"
+                    id="unemployment"
+                    value="unemployment"
+                    onChange={handleChange}
+                    checked={dataform.employment === "unemployment"}
+                />
+                <label htmlFor="unemployment">Unemployment</label>
+                <br />
+        
+                
+                <input 
+                    name="employment"
+                    type="radio"
+                    id="parttime"
+                    value="parttime"
+                    onChange={handleChange}
+                    checked={dataform.employment === "parttime"}
+                />
+                <label htmlFor="parttime">Part-time</label>
+                <br />
+
+               
+                <input 
+                    name="employment"
+                    type="radio"
+                    id="fulltime"
+                    value="fulltime"
+                    onChange={handleChange}
+                    checked={dataform.employment === "fulltime"}
+                />
+           
+                <label htmlFor="fulltime">Full time</label>
+                <br />
+            </fieldset>
+                <br />
+                <br />
+
+            <label htmlFor="favGirl">What your favorite girl?</label>
+            <br/>
+            <select
+                id="favGirl"
+                value={dataform.favGirl}
+                name="favGirl"
+                onChange={handleChange}
+            >
+                <option value="">-- Choose --</option>
+                <option value="asian">Asian</option>
+                <option value="american">American</option>
+                <option value="african">African</option>
+                <option value="latin">Latin</option>
+                <option value="arabian">Arabian</option>
+            </select>
+            <br/>
+            <button>Submit</button>
         </form>
     
     
