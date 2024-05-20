@@ -7,11 +7,12 @@ import CounterPropsState from './BasicPraktik/CountPropsState/CounterPropsState'
 import StateObjectProps from './BasicPraktik/StateObjectProps/StateObjectProps'
 import Parent from './BasicPraktik/PassingDataAround/Parent'
 import Squere from './BasicPraktik/BoxPractice2/Squere'
+import Jokes from './BasicPraktik/JokesProps/Jokes'
 
 const App = () => {
   return (
     <div>
-        {/* <Counter/>
+        <Counter/>
         <hr/>
         <Question/>
         <hr/>
@@ -23,9 +24,11 @@ const App = () => {
         <hr />
         <StateObjectProps />
         <hr/>
-        <Parent/> */}
+        <Parent/>
         <hr/>
         <Squere />
+        <hr/>
+        <Jokes />
     </div>
   )
 }
